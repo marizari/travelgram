@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    line-height: 0;
+    padding-block: 20px 20px;/* padding-block: 20px 20px;
+   Define o espaçamento vertical (cima e baixo).
+   Primeiro valor: padding-top (cima)
+   Segundo valor: padding-bottom (baixo)
+*/
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding-block: 8px;
+
+}
+
+nav ul li:last-child img { /* :last-child seleciona o último filho de um elemento.
+   Por exemplo, se houver várias <img> dentro de <nav><ul><li>, ele seleciona a última delas. */
+
+    width: 40px;
+    height: 40px;
+}

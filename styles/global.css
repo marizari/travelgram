@@ -16,7 +16,7 @@
     --font-family: "Open Sans", sans-serif;
     --text-lg: ;
     --text: bold 32px/125% var(--font-family);
-    --text:16px/1.5 var(--font-family);
+    --text:16px/1.5 var;
     --text-md: 14px/175% var(--font-family);
     --text-sm: 12px/175% var(--font-family);
 }
@@ -25,4 +25,14 @@ body {
     font: var(--text-lg);
     color:var(--text-color-secondary);
     background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Faz o link herdar a cor do elemento pai, removendo o azul padrão */
+}
+
+a:hover{
+    color: var(--brand-color);
+    text-decoration: underline;
 }

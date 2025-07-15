@@ -6,12 +6,18 @@ header {
 header .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: 0;
 }
 
+/* PERFIL - Lado Esquerdo */
 #profile {
     display: flex;
     gap: 32px;
+    align-items: flex-start;
+    flex: 1; /* Ocupa o espaço restante */
 }
 
 #profile > div {
@@ -19,23 +25,51 @@ header .container {
 }
 
 #profile h1 {
-    font: var(--text-lg);
+    font: var(--text-xl); 
     color: var(--text-color-primary);
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
+#profile p {
+    font: var(--text-md);
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+}
+
+#profile img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* INFO - Lado Direito */
 #info { 
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding: 0;
+    margin: 0;
 
-    width: 280px;
+    font: var(--text-md);
+    color: var(--text-color-secondary);
+    text-align: left;
+
+    flex-shrink: 0; /* Não encolhe em telas menores */
+    width: auto;
+    min-width: 200px;
 }
 
-info li {
+#info li {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+}
 
+#info img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    opacity: 0.7;
 }

@@ -14,18 +14,19 @@
     --text-color-secondary:#6C6C6C;
 
     --font-family: "Open Sans", sans-serif;
-    --text-lg: ;
-    --text: bold 32px/125% var(--font-family);
-    --text:16px/1.5 var;
-    --text-md: 14px/170% var(--font-family);
-    --text-sm: 12px/170% var(--font-family);
+
+    --text-xl: 800 32px/125% var(--font-family);
+    --text-lg: 700 24px/125% var(--font-family); 
+    --text-md: 400 16px/170% var(--font-family); 
+    --text-sm: 400 14px/170% var(--font-family); 
 }
 
 body {
-    font: var(--text-lg);
-    color:var(--text-color-secondary);
+      font: var(--text-md);
+  color: var(--text-color-secondary);
     background-color: var(--background-color);
 }
+
 
 a {
     text-decoration: none;
@@ -45,4 +46,12 @@ a:hover{
 
 .bg-surface-color {
     background-color:var(--surface-color) ;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, a, button {
+  transition: all 0.3s ease-in-out;
 }

@@ -9,7 +9,7 @@ main {
 }
 
 main img {
-    /*width: 286px;*/
+    width: 286px;
     /*height: 286px;*/
     width: calc((100% - 48px)/3); /* 100% menos os gaps divididos por 3, calcula a largura de cada imagem considerando os gaps (são 2 gaps de 34px entre 3 colunas). */
     object-fit: cover;
